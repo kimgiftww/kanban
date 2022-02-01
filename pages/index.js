@@ -29,7 +29,7 @@ const Home = () => {
       supabaseClient
         .from("todos")
         .select("*")
-        .eq("user_id", user?.id)
+        // .eq("user_id", user?.id)
         .order("id", { ascending: false })
         .then(({ data, error }) => {
           if (!error) {

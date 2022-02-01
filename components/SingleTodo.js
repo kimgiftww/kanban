@@ -46,6 +46,7 @@ const SingleTodo = ({ todo, openHandler, deleteHandler, isDeleteLoading }) => {
       />
       <Text color="gray.400" mt="1" fontSize="sm">
         {getDateInMonthDayYear(todo.insertedat)}
+        {todo.user_id}
       </Text>
       <Divider my="4" />
       <Text noOfLines={[1, 2, 3]} color="gray.800">
